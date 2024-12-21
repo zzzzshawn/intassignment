@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        'custom': '0px 5px 20px rgba(0, 0, 0, 0.1)',
+      },
       fontFamily: {
   			satoshi: [
   				'var(--font-satoshi)',
@@ -21,7 +24,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        "dark-1": "#414651"
+        "dark-1": "#414651",
+        "dark-2": "#081735",
+        "dark-3": "#181d27"
       },
     },
   },

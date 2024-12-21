@@ -1,5 +1,7 @@
-import { CodeXml, House, LogOut, Phone, Settings } from "lucide-react";
+import { CodeXml, House, KeyRound, LogOut, Phone, Settings } from "lucide-react";
 import Image from "next/image";
+
+
 
 export const SideBarLinks = [
     {
@@ -27,11 +29,13 @@ export const SideBarLinks = [
 export const SideBarBottomLinks = [
     {
         name: "Support",
-        Icon: <Phone className="size-[24px] "/>
+        Icon: <Phone className="size-[24px] "/>,
+        href: "/"
     },
     {
         name: "Logout",
-        Icon: <LogOut className="size-[24px] " />
+        Icon: <LogOut className="size-[24px] " />,
+        href: "/auth/sign-up"
     }
 ]
 
@@ -85,5 +89,39 @@ export const Repos = [
         tag: "Private",
         size: "5432",
         updated: "7"
+    }
+]
+
+
+export const providers = [
+    {
+        name: "Github",
+        Icon: <Image src="/assets/github.svg" alt="Cloud Security" width={24} height={24} className="size-[24px] "/>
+
+    },
+    {
+        name: "Bitbucket",
+        Icon: <Image src="/assets/bitbucket.svg" alt="Cloud Security" width={24} height={24} className="size-[24px] "/>
+    },
+    {
+        name: "Azure Devops",
+        Icon: <Image src="/assets/azure.svg" alt="Cloud Security" width={24} height={24} className="size-[24px] "/>
+
+    }, 
+    {
+        name: "GitLab",
+        Icon: <Image src="/assets/gitlab.svg" alt="Cloud Security" width={24} height={24} className="size-[24px] "/>
+    }
+]
+
+
+export const self_hosted = [
+    {
+        name: "GitLab",
+        Icon: <Image src="/assets/gitlab.svg" alt="Cloud Security" width={24} height={24} className="size-[24px] "/>
+    },
+    {
+        name: "SSO",
+        Icon: <KeyRound className="size-[24px] text-black"/>
     }
 ]
